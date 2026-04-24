@@ -39,9 +39,82 @@ local_search:
   preload: false
 
 # ---------------------------------------------------------------
+# Math Formulas (hexo-filter-mathjax)
+# Enable by adding mathjax: true to front-matter
+# ---------------------------------------------------------------
+math:
+  every_page: false
+  mathjax:
+    enable: true
+    tags: none
+  katex:
+    enable: false
+    copy_tex: false
+
+# ---------------------------------------------------------------
+# Pangu (hexo-pangu) - Chinese text spacing
+# ---------------------------------------------------------------
+pangu: true
+
+# ---------------------------------------------------------------
+# Optimize (hexo-optimize)
+# ---------------------------------------------------------------
+optimize:
+  enable: true
+  lib:
+    css: # Set to false to disable the built-in css optimizer
+      - # E.g. path or CDN link
+    js:
+      - # E.g. path or CDN link
+  filter:
+    exclude:
+      - # E.g. some paths to exclude from optimization
+
+# ---------------------------------------------------------------
+# External Libraries
+# ---------------------------------------------------------------
+# Enable PJAX for faster page transitions
+pjax: true
+
+# FancyBox for image zoom
+fancybox: true
+
+# Lazy load images
+lazyload: true
+
+# ---------------------------------------------------------------
+# Three.js (hexo-next-three)
+# 3D effects - enable in specific posts with three: true
+# ---------------------------------------------------------------
+#three:
+#  enable: true
+#  three_waves: false
+#  canvas_lines: false
+#  canvas_sphere: false
+#  canvas_random: true
+#  show_code: false
+#  distortion: false
+#  color: rand
+#  enable: true
+#  three_waves: true
+#  lines: false
+#  sphere: false
+#  random: false
+
+# ---------------------------------------------------------------
+# Fireworks (hexo-next-fireworks)
+# Confetti effect - enable with fireworks: true in front-matter
+# ---------------------------------------------------------------
+#fireworks: true
+
+# ---------------------------------------------------------------
+# EXIF (hexo-next-exif)
+# Display image EXIF metadata
+# ---------------------------------------------------------------
+exif: true
+
+# ---------------------------------------------------------------
 # Comments
-# Giscus requires installing the GitHub App first:
-# https://github.com/apps/giscus
 # ---------------------------------------------------------------
 comments:
   style: tabs
@@ -61,3 +134,14 @@ giscus:
   input_position: bottom
   theme: preferred_color_scheme
   lang: zh-CN
+
+# Valine Comment System (alternative)
+# https://valine.js.org
+#valine:
+#  enable: false
+#  appid: # Your Valine appid
+#  appkey: # Your Valine appkey
+#  placeholder: 说点什么吧... # Comment input placeholder
+#  avatar: mp # Avatar style
+#  pageSize: 10 # Pagination size
+#  lang: zh-CN
